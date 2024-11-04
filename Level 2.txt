@@ -1,0 +1,59 @@
+Level 2:- 
+
+
+Level Goal: The password for the next level is stored in a file called - located in the home directory
+
+Useful Commands: ls, cd, cat, file, du, find
+
+
+• After doing all the pre-req process to login to the remote server of the current level, we use the "ls" command and see a file named as ' - '.
+
+	bandit1@bandit:~$ ls
+	-
+	bandit1@bandit:~$
+
+• If we use the "cat" command as : cat - 
+  We see that the cursor goes to next line and awaits input instead of showing the content of the file. Here the system does not understand that we want to view the content of 
+  the ' - ' file.
+
+• So then the question arises, what are we supposed to do. Here comes the idea to check the useful commands section and we see that from the previous levels, we haven't used
+  the "du" and "find" command.
+
+• Here the "du" command is used to estimate the file space usage and "find" command searches for files in a directory hierarchy.
+
+• So we use the "find" command to see what is present in the " ~/ " directory. 
+  
+• Just type it as 'find' in the terminal.
+
+	bandit1@bandit:~$ find
+	.
+	./.profile
+	./.bashrc
+	./.bash_logout
+	./-
+	bandit1@bandit:~$
+
+
+• To our interest we see our ' - ' file named as ' ./- ' . Our system understands it as ' ./- ' .
+
+• We type the "cat" command as: cat ./-
+
+	bandit1@bandit:~$ cat ./-
+	263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+	bandit1@bandit:~$
+
+
+• Congratulations. We get the password for Level 3  (Level 2 -> Level 3).
+
+
+• Additional:  Since ' - ' is not a regular expression, our system does not understand it as ' - ' and saves it as ' ./- ' . 
+	       So if use terminal to view the content of the file, we have to use "cat" command with ' ./- ' . But if we open the file through clicking the file (GUI) we see it
+	       as ' - ' .
+
+
+
+================================================================================================================================================================================                                                               
+
+ 									NEXT --------> Bandit2 -> Bandit3
+
+ ================================================================================================================================================================================
