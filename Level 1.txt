@@ -1,0 +1,59 @@
+Level 1:-
+
+Level Goal: The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+
+Useful commands: ls, cd, cat, file, du, find
+
+TIP: Create a file for notes and passwords on your local machine!
+
+Passwords for levels are not saved automatically. If you do not save them yourself, you will need to start over from bandit0.
+
+Passwords also occasionally change. It is recommended to take notes on how to solve each challenge. As levels get more challenging, detailed notes are useful to return to where you left off, reference for later problems, or help others after you’ve completed the challenge.
+
+
+• After solving previous level (bandit0), you would have entered the first level. Once again, I congratulate you for making you first breakthrough.
+
+• Given in useful commands section, we can see the first command "ls" which lists all the files and directories present in a directory.
+
+• After typing the "ls" command, you can see the a 'readme' file.
+
+ 	bandit0@bandit:~$ ls
+	readme
+	bandit0@bandit:~$
+
+
+• Next we use "cat" command which is commonly used to display the contents present in a file. 
+
+• The general use of "cat" command is: cat [file]
+
+• We use the above command as: cat readme
+
+	bandit0@bandit:~$ cat readme
+	Congratulations on your first steps into the bandit game!!
+	Please make sure you have read the rules at https://overthewire.org/rules/
+	If you are following a course, workshop, walkthrough or other educational activity,
+	please inform the instructor about the rules as well and encourage them to
+	contribute to the OverTheWire community so we can keep these games free!
+
+	The password you are looking for is: ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
+
+	bandit0@bandit:~$
+
+
+• Congratulations on completing the first level. We got the password for Level 2 (Level1 -> Level 2).
+
+
+• Additional: We can use the "file" command to see the mentioned file is what type of file it is. Either text, md, python, etc..
+
+	      We use the "cd" command to change directory, like the default directory will be ' ~/ '.
+	      We can change to Desktop as an example, by using "cd" command as "cd Desktop" or "cd Desktop/"
+
+
+ ================================================================================================================================================================================                                                               
+
+ 									NEXT --------> Bandit1 -> Bandit2 
+
+ ================================================================================================================================================================================
+
+
+									
