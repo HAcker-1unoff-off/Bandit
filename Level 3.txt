@@ -1,0 +1,59 @@
+Level 3:- 
+
+
+Level Goal: The password for the next level is stored in a file called spaces in this filename located in the home directory
+
+Useful Commands: ls, cd, cat, file, du, find
+
+
+• In this level the file is called spaces. When we use "ls" command, we see 
+	
+	bandit2@bandit:~$ ls
+	spaces in this filename
+	bandit2@bandit:~$
+
+• If we type "cat" command on this filename, then we will see
+
+	bandit2@bandit:~$ cat spaces in the filename
+	cat: spaces: No such file or directory
+	cat: in: No such file or directory
+	cat: the: No such file or directory
+	cat: filename: No such file or directory
+	bandit2@bandit:~$
+
+• Whenever we search for a file with spaces in terminal, it treats it as separate files, so generally on computer basics the file names are considered to use the 
+  underscore ' _ ' symbol.
+
+• So like in the previous level, we use the "find" command to see what exactly the computer system understands.
+
+	bandit2@bandit:~$ find
+	.
+	./.profile
+	./.bashrc
+	./.bash_logout
+	./spaces in this filename
+	bandit2@bandit:~$
+
+• Now we can use the "cat" command to view the file.
+  NOTE: When typing the file name with "cat" command: cat ./spaces 
+	At this stage press the 'tab' button auto-complete the filename as the '\' symbol is used to make the system understand that it is a single file but for the user, this 	is invisible.
+	The 'tab' button is used to auto-complete filenames or commands. For more clarity on the usage of 'tab' button, check on the web.
+
+
+	bandit2@bandit:~$ cat ./spaces\ in\ this\ filename 
+	MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+	bandit2@bandit:~$
+
+
+• Congratulations. We got the password for Level 4 (Level 3 -> Level 4).
+
+• Additional: If use the "cat" command directly with filename with 'tab' button, it directly shows the content of the file. Since there is only file with such name, the system
+	      can understand. But when multiple files with such names exist, it is recommended to use/follow the procedure of this level.
+
+
+
+ ================================================================================================================================================================================                                                               
+
+ 									NEXT --------> Bandit3 -> Bandit4
+
+ ================================================================================================================================================================================
