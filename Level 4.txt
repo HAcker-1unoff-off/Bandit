@@ -1,0 +1,46 @@
+Level 4:-
+
+Level Goal: The password for the next level is stored in a hidden file in the 'inhere' directory.
+
+Useful Commands: ls, cd, cat, file, du, find
+
+• In this level the file is stored in a directory called 'inhere'
+
+	bandit3@bandit:~$ ls
+	inhere
+	bandit3@bandit:~$
+
+• Now we type "cd" command, to change to the 'inhere' command
+
+	bandit3@bandit:~$ cd inhere
+	bandit3@bandit:~/inhere$
+
+• Now when we type the "ls" command, we see we cannot see any file but it is mentioned 
+
+	bandit3@bandit:~/inhere$ ls
+	bandit3@bandit:~/inhere$
+
+• If you recollect, we use the "find" command to check what the system understands the file name as.
+  Similarly, we use the "find" command to see the file.
+
+	bandit3@bandit:~/inhere$ find
+	.
+	./...Hiding-From-You
+	bandit3@bandit:~/inhere$
+
+• Now we see a file named as './...Hiding-From-You'. This file contains the password for next level.
+
+• Now let's use the "cat" command to see the contents of the file.
+
+	bandit3@bandit:~/inhere$ cat ./...Hiding-From-You 
+	2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+	bandit3@bandit:~/inhere$
+
+• Congratulations. We got the password for Level 5 (Level 4 -> Level 5).
+
+
+ ================================================================================================================================================================================                                                               
+
+ 									NEXT --------> Bandit4 -> Bandit5
+
+ ================================================================================================================================================================================
