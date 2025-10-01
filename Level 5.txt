@@ -1,0 +1,45 @@
+Level 5:-
+
+
+Level Goal: The password for the next file is stored in the 'inhere' directory.
+
+
+Useful commands: ls, cd, cat, file, du, find
+
+
+• In this level the file is stored in the 'inhere' directory
+
+	bandit4@bandit:~$ ls
+	inhere
+
+
+• Now we type "cd" command, to change to the 'inhere' command
+
+	bandit4@bandit:~$ cd inhere
+	bandit4@bandit:~/inhere$
+
+
+• Now when we type the "ls" command, we see we cannot see any file but it is mentioned 
+
+	bandit4@bandit:~/inhere$ ls
+	bandit4@bandit:~/inhere$ -file00 -file01 -file02 -file03 -file04 -file05 -file06 -file07 -file08 -file09
+
+
+• From the useful commands section, we have the 'find' and 'file' command. The 'find' command will help us get the actual name of the file that the computer understands.
+  The 'file' command tells us what kind of file the specific file is.
+
+
+• Try the 'file' command for each file until you find the file type to be 'ASCII text' type of file.
+
+
+• Now use the 'cat' command to see the file content. 
+
+
+• Congrats you found the password for Level 6 (Level 5 -> Level 6).
+
+
+ ================================================================================================================================================================================                                                               
+
+ 									NEXT --------> Bandit5 -> Bandit6
+
+ ================================================================================================================================================================================
